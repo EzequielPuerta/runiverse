@@ -39,7 +39,7 @@ alembic-migrate:
 # Pip
 ##################################################
 freeze:
-	cd backend && poetry export --without-hashes --format=requirements.txt > requirements.txt
+	cd backend && poetry export --without-hashes --format=requirements.txt > runiverse/requirements.txt
 
 ##################################################
 # Poetry
