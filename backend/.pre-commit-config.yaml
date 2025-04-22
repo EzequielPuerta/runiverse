@@ -9,10 +9,10 @@ repos:
     -   id: check-yaml
     -   id: check-toml
     -   id: check-added-large-files
--   repo: https://github.com/pycqa/flake8
-    rev: 7.2.0
+-   repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.11.6
     hooks:
-    -   id: flake8
+      - id: ruff
 -   repo: https://github.com/psf/black
     rev: 25.1.0
     hooks:
@@ -20,7 +20,9 @@ repos:
 -   repo: https://github.com/pre-commit/mirrors-mypy
     rev: v1.15.0
     hooks:
-        - id: mypy
+      - id: mypy
+        args: ["--config-file=backend/pyproject.toml"]
+        exclude: "backend/manage.py|backend/alembic/versions/*"
 -   repo: https://github.com/PyCQA/isort
     rev: 6.0.1
     hooks:
