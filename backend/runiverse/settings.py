@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "runiverse.wsgi.application"
+WSGI_APPLICATION = "runiverse.wsgi.app"
 
 
 # Database
