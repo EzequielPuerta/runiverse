@@ -8,20 +8,17 @@ importers:
 
   .:
     devDependencies:
-      '@sveltejs/adapter-auto':
-        specifier: ^4.0.0
-        version: 4.0.0(@sveltejs/kit@2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.3))(svelte@5.28.2)(vite@6.3.3))
       '@sveltejs/adapter-vercel':
         specifier: ^5.7.0
         version: 5.7.0(@sveltejs/kit@2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.3))(svelte@5.28.2)(vite@6.3.3))(rollup@4.40.0)
       '@sveltejs/kit':
-        specifier: ^2.20.7
+        specifier: ^2.16.0
         version: 2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.3))(svelte@5.28.2)(vite@6.3.3)
       '@sveltejs/vite-plugin-svelte':
         specifier: ^5.0.0
         version: 5.0.3(svelte@5.28.2)(vite@6.3.3)
       svelte:
-        specifier: ^5.28.2
+        specifier: ^5.0.0
         version: 5.28.2
       svelte-check:
         specifier: ^4.0.0
@@ -30,7 +27,7 @@ importers:
         specifier: ^5.0.0
         version: 5.8.3
       vite:
-        specifier: ^6.3.3
+        specifier: ^6.2.5
         version: 6.3.3
 
 packages:
@@ -490,11 +487,6 @@ packages:
     resolution: {integrity: sha512-IwQk4yfwLdibDlrXVE04jTZYlLnwsTT2PIOQQGNLWfjavGifnk1JD1LcZjZaBTRcxZu2FfPfNLOE04DSu9lqtQ==}
     peerDependencies:
       acorn: ^8.9.0
-
-  '@sveltejs/adapter-auto@4.0.0':
-    resolution: {integrity: sha512-kmuYSQdD2AwThymQF0haQhM8rE5rhutQXG4LNbnbShwhMO4qQGnKaaTy+88DuNSuoQDi58+thpq8XpHc1+oEKQ==}
-    peerDependencies:
-      '@sveltejs/kit': ^2.0.0
 
   '@sveltejs/adapter-vercel@5.7.0':
     resolution: {integrity: sha512-Bd/loKugyr12I576NaktLzIHa0PinS638wuWgVq4ctPg/qmkeU459jurWjs3NiRN/pbBpXOlk8i8HXgQF+dsUg==}
@@ -1245,11 +1237,6 @@ snapshots:
   '@sveltejs/acorn-typescript@1.0.5(acorn@8.14.1)':
     dependencies:
       acorn: 8.14.1
-
-  '@sveltejs/adapter-auto@4.0.0(@sveltejs/kit@2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.3))(svelte@5.28.2)(vite@6.3.3))':
-    dependencies:
-      '@sveltejs/kit': 2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.3))(svelte@5.28.2)(vite@6.3.3)
-      import-meta-resolve: 4.1.0
 
   '@sveltejs/adapter-vercel@5.7.0(@sveltejs/kit@2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.3))(svelte@5.28.2)(vite@6.3.3))(rollup@4.40.0)':
     dependencies:
