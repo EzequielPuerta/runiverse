@@ -1,6 +1,14 @@
 {
     "builds": [
         {
+            "src": "app/package.json",
+            "use": "@sveltejs/adapter-vercel"
+        },
+        {
+            "src": "admin/package.json",
+            "use": "@sveltejs/adapter-vercel"
+        },
+        {
             "src": "backend/runiverse/wsgi.py",
             "use": "@vercel/python"
         }
