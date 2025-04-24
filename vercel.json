@@ -1,6 +1,14 @@
 {
     "builds": [
         {
+            "src": "app/package.json",
+            "use": "@vercel/og-build"
+        },
+        {
+            "src": "admin/package.json",
+            "use": "@vercel/og-build"
+        },
+        {
             "src": "backend/runiverse/wsgi.py",
             "use": "@vercel/python"
         }
