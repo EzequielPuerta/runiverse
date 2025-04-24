@@ -1,4 +1,18 @@
 {
+    "builds": [
+        {
+            "src": "app/package.json",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "admin/package.json",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "backend/runiverse/wsgi.py",
+            "use": "@vercel/python"
+        }
+    ],
     "routes": [
         {
             "src": "^/admin(/.*)?$",
