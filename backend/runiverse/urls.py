@@ -21,7 +21,7 @@ from django.urls import include, path
 from runiverse.views import api_root
 
 urlpatterns = [
-    path("", api_root),
-    path("", include("brands.urls")),
-    path("", include("races.urls")),
+    path("api/", api_root),
+    path("api/", include("brands.urls")),
+    path("api/", include("races.urls")),
 ]
