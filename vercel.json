@@ -2,11 +2,11 @@
     "builds": [
         {
             "src": "app/package.json",
-            "use": "@vercel/svelte"
+            "use": "@vercel/static-build"
         },
         {
             "src": "admin/package.json",
-            "use": "@vercel/svelte"
+            "use": "@vercel/static-build"
         },
         {
             "src": "backend/runiverse/wsgi.py",
