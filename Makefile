@@ -1,3 +1,8 @@
+.PHONY: init run-all runserver start django-makemigrations django-migrate \
+		alembic-init alembic-makemigrations alembic-migrate freeze \
+		poetry-install poetry-add poetry-remove pre-commit-install \
+		pre-commit-autoupdate pre-commit-run
+
 ##################################################
 # Initialization
 ##################################################
@@ -7,6 +12,18 @@ init:
 	$(MAKE) pre-commit-autoupdate
 	$(MAKE) alembic-init
 	$(MAKE) django-migrate
+
+##################################################
+# Running
+##################################################
+run-all:
+	$(MAKE) runserver & \
+	cd app && npm run dev -- --port 5173 & \
+	cd admin && npm run dev -- --port 5174 & \
+	wait
+
+stop-all:
+	pkill -f 'manage.py runserver' && pkill -f 'pnpm dev'
 
 ##################################################
 # Django

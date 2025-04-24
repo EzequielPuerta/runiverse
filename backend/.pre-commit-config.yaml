@@ -22,7 +22,7 @@ repos:
     hooks:
       - id: mypy
         args: ["--config-file=backend/pyproject.toml"]
-        exclude: "backend/manage.py|backend/alembic/versions/*"
+        exclude: "backend/manage.py|backend/alembic/versions/*|admin/*|app/*"
 -   repo: https://github.com/PyCQA/isort
     rev: 6.0.1
     hooks:

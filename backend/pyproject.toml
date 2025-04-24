@@ -79,6 +79,8 @@ ignore_missing_imports = true
 exclude = [
     "backend/manage.py",
     "backend/alembic/versions/*",
+    "admin/*",
+    "app/*",
 ]
 
 [[tool.mypy.overrides]]
