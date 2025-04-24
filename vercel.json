@@ -16,7 +16,7 @@
     "routes": [
         {
             "src": "^/admin(/.*)?$",
-            "dest": "admin"
+            "dest": "/admin"
         },
         {
             "src": "^/api(/.*)?$",
@@ -24,7 +24,7 @@
         },
         {
             "src": "^/(.*)?$",
-            "dest": "app"
+            "dest": "/app"
         }
     ]
 }
