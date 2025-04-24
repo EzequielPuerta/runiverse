@@ -2,11 +2,11 @@
     "builds": [
         {
             "src": "app/package.json",
-            "use": "@vercel/og-build"
+            "use": "@sveltejs/adapter-vercel"
         },
         {
             "src": "admin/package.json",
-            "use": "@vercel/og-build"
+            "use": "@sveltejs/adapter-vercel"
         },
         {
             "src": "backend/runiverse/wsgi.py",
