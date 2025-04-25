@@ -1,4 +1,5 @@
-.PHONY: init run-all runserver start django-makemigrations django-migrate \
+.PHONY: init run-all runserver run-app run-admin start \
+		django-makemigrations django-migrate \
 		alembic-init alembic-makemigrations alembic-migrate freeze \
 		poetry-install poetry-add poetry-remove pre-commit-install \
 		pre-commit-autoupdate pre-commit-run
@@ -18,12 +19,18 @@ init:
 ##################################################
 run-all:
 	$(MAKE) runserver & \
-	cd app && npm run dev -- --port 5173 & \
-	cd admin && npm run dev -- --port 5174 & \
+	$(MAKE) run-app & \
+	$(MAKE) run-admin & \
 	wait
 
 stop-all:
 	pkill -f 'manage.py runserver' && pkill -f 'pnpm dev'
+
+run-app:
+	cd app && pnpm run dev -- --port 5173
+
+run-admin:
+	cd admin && pnpm run dev -- --port 5174
 
 ##################################################
 # Django
